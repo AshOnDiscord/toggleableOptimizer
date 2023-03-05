@@ -10,7 +10,6 @@ import java.util.Iterator;
 import java.util.Map;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.entity.Entity.RemovalReason;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -36,8 +35,6 @@ public class MinecraftClientMixin {
 				iterator.remove();
 				if (!entity.isAlive()) {
 					entity.kill();
-					entity.setRemoved(RemovalReason.KILLED);
-					entity.onRemoved();
 				}
 			} else {
 				entry.setValue(delay);

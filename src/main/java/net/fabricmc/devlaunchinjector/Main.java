@@ -115,10 +115,16 @@ public final class Main {
                     }
                 }
 
-                state = switch (line.substring(pos)) {
-                    case "Args" -> 1;
-                    case "Properties" -> 2;
-                    default -> throw new IOException("invalid attribute: " + line);
+                state = 0 ;
+                switch (line.substring(pos)) {
+                    case "Args":
+                        state = 1;
+                        break;
+                    case "Properties":
+                        state = 2;
+                        break;
+                    default:
+                        throw new IOException("invalid attribute: " + line);
                 };
             }
         } catch (Throwable var23) {

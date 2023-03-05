@@ -23,7 +23,6 @@ import net.minecraft.network.Packet;
 import net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.hit.EntityHitResult;
-import net.minecraft.entity.Entity.RemovalReason;
 import net.minecraft.util.hit.HitResult.Type;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -42,37 +41,27 @@ public class ClientConnectionMixin {
     private void onPacketSend(Packet<?> packet, CallbackInfo info) {
         final MinecraftClient mc = MinecraftClient.getInstance();
         if (!MarlowCrystal.isEnabled) return;
-        if (packet instanceof PlayerInteractEntityC2SPacket interactPacket) {
-            interactPacket.handle(new PlayerInteractEntityC2SPacket.Handler() {
-                public void interact(Hand hand) {
-                }
-
-                public void interactAt(Hand hand, Vec3d pos) {
-                }
-
-                public void attack() {
-                    HitResult hitResult = mc.crosshairTarget;
-                    if (hitResult != null) {
-                        if (hitResult.getType() == Type.ENTITY) {
-                            EntityHitResult entityHitResult = (EntityHitResult)hitResult;
-                            Entity entity = entityHitResult.getEntity();
-                            if (entity instanceof EndCrystalEntity) {
-                                assert mc.player != null;
-                                StatusEffectInstance weakness = mc.player.getStatusEffect(StatusEffects.WEAKNESS);
-                                StatusEffectInstance strength = mc.player.getStatusEffect(StatusEffects.STRENGTH);
-                                if (weakness != null && (strength == null || strength.getAmplifier() <= weakness.getAmplifier()) && !ClientConnectionMixin.this.isTool(mc.player.getMainHandStack())) {
-                                    return;
-                                }
-
-                                entity.kill();
-                                entity.setRemoved(RemovalReason.KILLED);
-                                entity.onRemoved();
+        if (packet instanceof PlayerInteractEntityC2SPacket) {
+            PlayerInteractEntityC2SPacket interactPacket = (PlayerInteractEntityC2SPacket) packet;
+             if (interactPacket.getType() == PlayerInteractEntityC2SPacket.InteractionType.ATTACK) {
+                HitResult hitResult = mc.crosshairTarget;
+                if (hitResult != null) {
+                    if (hitResult.getType() == Type.ENTITY) {
+                        EntityHitResult entityHitResult = (EntityHitResult)hitResult;
+                        Entity entity = entityHitResult.getEntity();
+                        if (entity instanceof EndCrystalEntity) {
+                            assert mc.player != null;
+                            StatusEffectInstance weakness = mc.player.getStatusEffect(StatusEffects.WEAKNESS);
+                            StatusEffectInstance strength = mc.player.getStatusEffect(StatusEffects.STRENGTH);
+                            if (weakness != null && (strength == null || strength.getAmplifier() <= weakness.getAmplifier()) && !ClientConnectionMixin.this.isTool(mc.player.getMainHandStack())) {
+                                return;
                             }
-                        }
 
+                            entity.kill();
+                        }
                     }
                 }
-            });
+            }
         }
 
     }
