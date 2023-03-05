@@ -31,17 +31,17 @@ public class MarlowCrystal implements ClientModInitializer {
 	public void onInitializeClient() {
 		toKill.clear();
 		keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-				"key.marlowcrystal.toggle", // The translation key of the keybinding's name
+				"Toggle", // The translation key of the keybinding's name
 				InputUtil.Type.KEYSYM, // The type of the keybinding, KEYSYM for keyboard, MOUSE for mouse.
 				GLFW.GLFW_KEY_B, // The keycode of the key
-				"category.marlowcrystal.optimizer" // The translation key of the keybinding's category.
+				"Crystal Optimizer" // The translation key of the keybinding's category.
 		));
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (keyBinding.wasPressed()) {
 				assert client.player != null;
 				isEnabled = !isEnabled;
 				String stateStr = isEnabled ? "enabled" : "disabled";
-				client.player.sendMessage(new LiteralText("Key was pressed! Optimizer is now " + stateStr), false);
+				client.player.sendMessage(new LiteralText("§9[Crystal Optimizer]: Optimizer is now " + stateStr), false);
 			}
 		});
 	}

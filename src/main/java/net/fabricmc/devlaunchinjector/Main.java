@@ -61,9 +61,6 @@ public final class Main {
     }
 
     private static void parseConfig(Path file, String env, List<String> extraArgs, Map<String, String> extraProperties) throws IOException {
-        boolean STATE_ARGS = true;
-        boolean STATE_PROPERTIES = true;
-        boolean STATE_SKIP = true;
         BufferedReader reader = Files.newBufferedReader(file);
         Throwable var9 = null;
 
