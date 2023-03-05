@@ -1,0 +1,246 @@
+[16:45:52] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.17.1 with Fabric Loader 0.12.12
+[16:45:52] [main/INFO] (FabricLoader) Loading 52 mods:
+	- fabric 0.46.1+1.17
+	- fabric-api-base 0.4.0+5847535018
+	- fabric-api-lookup-api-v1 1.3.1+5847535018
+	- fabric-biome-api-v1 3.2.2+5847535018
+	- fabric-blockrenderlayer-v1 1.1.6+5847535018
+	- fabric-command-api-v1 1.1.4+5847535018
+	- fabric-commands-v0 0.2.3+5847535018
+	- fabric-containers-v0 0.1.13+5847535018
+	- fabric-content-registries-v0 0.3.1+5847535018
+	- fabric-crash-report-info-v1 0.1.6+5847535018
+	- fabric-dimensions-v1 2.0.13+5847535018
+	- fabric-entity-events-v1 1.3.1+5847535018
+	- fabric-events-interaction-v0 0.4.11+5847535018
+	- fabric-events-lifecycle-v0 0.2.2+5847535018
+	- fabric-game-rule-api-v1 1.0.8+5847535018
+	- fabric-gametest-api-v1 1.0.2+5847535018
+	- fabric-item-api-v1 1.2.5+5847535018
+	- fabric-item-groups-v0 0.3.1+5847535018
+	- fabric-key-binding-api-v1 1.0.5+5847535018
+	- fabric-keybindings-v0 0.2.3+5847535018
+	- fabric-lifecycle-events-v1 1.4.5+5847535018
+	- fabric-loot-tables-v1 1.0.5+5847535018
+	- fabric-mining-level-api-v1 1.0.2+6d0fac4218
+	- fabric-mining-levels-v0 0.1.5+6d0fac4218
+	- fabric-models-v0 0.3.1+5847535018
+	- fabric-networking-api-v1 1.0.14+5847535018
+	- fabric-networking-blockentity-v0 0.2.12+5847535018
+	- fabric-networking-v0 0.3.3+5847535018
+	- fabric-object-builder-api-v1 1.10.11+6d0fac4218
+	- fabric-object-builders-v0 0.7.5+6d0fac4218
+	- fabric-particles-v1 0.2.5+5847535018
+	- fabric-registry-sync-v0 0.7.13+5847535018
+	- fabric-renderer-api-v1 0.4.5+5847535018
+	- fabric-renderer-indigo 0.4.9+5847535018
+	- fabric-renderer-registries-v1 3.2.6+6d0fac4218
+	- fabric-rendering-data-attachment-v1 0.1.6+5847535018
+	- fabric-rendering-fluids-v1 0.2.1+6d0fac4218
+	- fabric-rendering-v0 1.1.7+6d0fac4218
+	- fabric-rendering-v1 1.10.1+6d0fac4218
+	- fabric-resource-conditions-api-v1 1.0.1+591a0f2118 via fabric
+	- fabric-resource-loader-v0 0.4.9+5847535018
+	- fabric-screen-api-v1 1.0.5+5847535018
+	- fabric-screen-handler-api-v1 1.1.9+5847535018
+	- fabric-structure-api-v1 1.1.14+5847535018
+	- fabric-tag-extensions-v0 1.2.2+5847535018
+	- fabric-textures-v0 1.0.7+5847535018
+	- fabric-tool-attribute-api-v1 1.3.1+eb76084f18
+	- fabric-transfer-api-v1 1.5.1+6d0fac4218
+	- fabricloader 0.12.12
+	- java 17
+	- marlows-crystal-optimizer ${version}
+	- minecraft 1.17.1
+[16:45:58] [main/WARN] (FabricLoader/Metadata) Mod `marlows-crystal-optimizer` (${version}) does not respect SemVer - comparison support is limited.
+[16:45:58] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/home/ash/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.10.7+mixin.0.8.4/7a4ca9d54d9ae564dea0363d668036a8420ed9b8/sponge-mixin-0.10.7+mixin.0.8.4.jar Service=Knot/Fabric Env=CLIENT
+[16:45:58] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[16:45:58] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
+[16:46:00] [main/WARN] (FileUtil) Configuration conflict: there is more than one oshi.properties file on the classpath
+[16:46:00] [main/WARN] (FileUtil) Configuration conflict: there is more than one oshi.architecture.properties file on the classpath
+[16:46:07] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16:46:08] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
+	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-2.3.31.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:112) ~[authlib-2.3.31.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:42) ~[authlib-2.3.31.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.createSocialInteractionsService(YggdrasilAuthenticationService.java:151) ~[authlib-2.3.31.jar:?]
+	at net.minecraft.client.MinecraftClient.createSocialInteractionsService(MinecraftClient.java:669) [minecraft-mapped.jar:?]
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:503) [minecraft-mapped.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:161) [minecraft-mapped.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:608) [fabric-loader-0.12.12.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:77) [fabric-loader-0.12.12.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.12.12.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:64) [marlow1-17.main/:?]
+Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:79) ~[authlib-2.3.31.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:47) ~[authlib-2.3.31.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:104) ~[authlib-2.3.31.jar:?]
+	... 13 more
+[16:46:08] [Render thread/INFO] (Minecraft) Setting user: Player771
+[16:46:09] [Render thread/WARN] (FabricLoader/Mixin) @Inject(@At("INVOKE")) Shift.BY=3 on fabric-lifecycle-events-v1.mixins.json:client.WorldChunkMixin::handler$zcp000$onLoadBlockEntity exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[16:46:09] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[16:46:10] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
+[16:46:17] [Render thread/WARN] (Minecraft) ERROR : Couldn't load Narrator library : Unable to load library 'fliteWrapper':
+libflite.so.1: cannot open shared object file: No such file or directory
+libflite.so.1: cannot open shared object file: No such file or directory
+Native library (linux-x86-64/libfliteWrapper.so) not found in resource path (/home/ash/Documents/randomCode/marlow1-17/production/marlow1-17.main:/home/ash/.gradle/caches/modules-2/files-2.1/net.fabricmc/tiny-mappings-parser/0.3.0+build.17/2f10540a290e382a7cd35c16ec3900046a4e252/tiny-mappings-parser-0.3.0+build.17.jar:/home/ash/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.10.7+mixin.0.8.4/7a4ca9d54d9ae564dea0363d668036a8420ed9b8/sponge-mixin-0.10.7+mixin.0.8.4.jar:/home/ash/.gradle/caches/modules-2/files-2.1/net.fabricmc/tiny-remapper/0.6.0/f933e87da52f2e36f73ddfe5401f1029937d4118/tiny-remapper-0.6.0.jar:/home/ash/.gradle/caches/modules-2/files-2.1/net.fabricmc/access-widener/2.0.1/ef3d217a193b22d6dde944ccd4af525a89096b2f/access-widener-2.0.1.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.2/81a03f76019c67362299c40e0ba13405f5467bff/asm-9.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.2/7487dd756daf96cab9986e44b9d7bcb796a61c10/asm-analysis-9.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.2/f4d7f0fc9054386f2893b602454d48e07d4fbead/asm-commons-9.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.2/d96c99a30f5e1a19b0e609dbb19a44d8518ac01e/asm-tree-9.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.2/fbc178fc5ba3dab50fd7e8a5317b8b647c8e8946/asm-util-9.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.mojang/blocklist/1.0.5/9da540f21c9a8d5ed7c029e1f88d1a6dabb0d6ad/blocklist-1.0.5.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/2.1.6/ce112c16c6275fdfff2d30208533ec906a191f71/patchy-2.1.6.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/5.7.5/725374463734aacde70a3b20f018aca3f922655f/oshi-core-5.7.5.jar:/home/ash/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.8.0/3551d8d827e54858214107541d3aff9c615cb615/jna-5.8.0.jar:/home/ash/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.8.0/2f12f6d7f7652270d13624cef1b82d8cd9a5398e/jna-platform-5.8.0.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.8.0-beta4/83b0359d847ee053d745be7ec0d8e9e8a44304b4/slf4j-api-1.8.0-beta4.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j18-impl/2.14.1/312b4d91b21160b9fab43600fa787f31e8cab930/log4j-slf4j18-impl-2.14.1.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/66.1/72c7519b6d91f7a1f993bd44a99fe95d67211b27/icu4j-66.1.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.mojang/javabridge/1.1.23/3e5084d916ba393dfd82928ec97663aeb10b2e2c/javabridge-1.1.23.jar:/home/ash/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.3/cdd846cfc4e0f7eefafc02c0f5dce32b9303aa2a/jopt-simple-5.0.3.jar:/home/ash/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.25.Final/d0626cd3108294d1d58c05859add27b4ef21f83b/netty-all-4.1.25.Final.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/21.0/3a3d111be1be1b745edfa7d91678a12d7ed38709/guava-21.0.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar:/home/ash/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar:/home/ash/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar:/home/ash/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar:/home/ash/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.0.18/c1ef1234282716483c92183f49bef47b1a89bfa9/brigadier-1.0.18.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/4.0.26/ebd6690f33871ccee9b6132c6480668ee2e35020/datafixerupper-4.0.26.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/2.3.31/bbd00ca33b052f73a6312254780fc580d2da3535/authlib-2.3.31.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar:/home/ash/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.2.1/5ad88f325e424f8dbc2be5459e21ea5cab3864e9/fastutil-8.2.1.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.14.1/cd8858fbbde69f46bce8db1152c18a43328aae78/log4j-api-2.14.1.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.14.1/9141212b8507ab50a45525b545b39d224614528b/log4j-core-2.14.1.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.2.2/8ad6294407e15780b43e84929c40e4c5e997972e/lwjgl-3.2.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.2.2/ee8e57a79300f78294576d87c4a587f8c99402e2/lwjgl-jemalloc-3.2.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.2.2/2b772a102b0a11ee5f2109a5b136f4dc7c630827/lwjgl-openal-3.2.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.2.2/6ac5bb88b44c43ea195a570aab059f63da004cd8/lwjgl-opengl-3.2.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.2.2/d3ad4df38e400b8afba1de63f84338809399df5b/lwjgl-glfw-3.2.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.2.2/3b8e6ebc5851dd3d17e37e5cadce2eff2a429f0f/lwjgl-stb-3.2.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.2.2/fcbe606c8f8da6f8f9a05e2c540eb1ee8632b0e9/lwjgl-tinyfd-3.2.2.jar:/home/ash/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.11.3/f378f889797edd7df8d32272c06ca80a1b6b0f58/text2speech-1.11.3.jar:/home/ash/.gradle/caches/modules-2/files-2.1/ca.weblite/java-objc-bridge/1.0.0/6ef160c3133a78de015830860197602ca1c855d3/java-objc-bridge-1.0.0.jar:/home/ash/.gradle/caches/fabric-loom/1.17.1/net.fabricmc.yarn.1_17_1.1.17.1+build.63-v2/minecraft-mapped.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-api/0.42.1+1.17/fabric-api-0.42.1+1.17.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/1.5.1+6d0fac4218/fabric-transfer-api-v1-1.5.1+6d0fac4218.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.3.1+5847535018/fabric-api-lookup-api-v1-1.3.1+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.6+5847535018/fabric-blockrenderlayer-v1-1.1.6+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-commands-v0/0.2.3+5847535018/fabric-commands-v0-0.2.3+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-command-api-v1/1.1.4+5847535018/fabric-command-api-v1-1.1.4+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-containers-v0/0.1.13+5847535018/fabric-containers-v0-0.1.13+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/0.3.1+5847535018/fabric-content-registries-v0-0.3.1+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.0.13+5847535018/fabric-dimensions-v1-2.0.13+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.3.1+5847535018/fabric-entity-events-v1-1.3.1+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.4.11+5847535018/fabric-events-interaction-v0-0.4.11+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0/0.2.2+5847535018/fabric-events-lifecycle-v0-0.2.2+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.0.2+5847535018/fabric-gametest-api-v1-1.0.2+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-item-api-v1/1.2.5+5847535018/fabric-item-api-v1-1.2.5+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-item-groups-v0/0.3.1+5847535018/fabric-item-groups-v0-0.3.1+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-structure-api-v1/1.1.14+5847535018/fabric-structure-api-v1-1.1.14+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/1.4.5+5847535018/fabric-lifecycle-events-v1-1.4.5+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1/1.0.5+5847535018/fabric-loot-tables-v1-1.0.5+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-mining-levels-v0/0.1.5+6d0fac4218/fabric-mining-levels-v0-0.1.5+6d0fac4218.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-object-builders-v0/0.7.5+6d0fac4218/fabric-object-builders-v0-0.7.5+6d0fac4218.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/1.10.11+6d0fac4218/fabric-object-builder-api-v1-1.10.11+6d0fac4218.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-tool-attribute-api-v1/1.3.1+eb76084f18/fabric-tool-attribute-api-v1-1.3.1+eb76084f18.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/1.0.2+6d0fac4218/fabric-mining-level-api-v1-1.0.2+6d0fac4218.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-models-v0/0.3.1+5847535018/fabric-models-v0-0.3.1+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-networking-v0/0.3.3+5847535018/fabric-networking-v0-0.3.3+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/0.7.13+5847535018/fabric-registry-sync-v0-0.7.13+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.1.9+5847535018/fabric-screen-handler-api-v1-1.1.9+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.0.14+5847535018/fabric-networking-api-v1-1.0.14+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-networking-blockentity-v0/0.2.12+5847535018/fabric-networking-blockentity-v0-0.2.12+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-particles-v1/0.2.5+5847535018/fabric-particles-v1-0.2.5+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/0.4.9+5847535018/fabric-renderer-indigo-0.4.9+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/0.4.5+5847535018/fabric-renderer-api-v1-0.4.5+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1/3.2.6+6d0fac4218/fabric-renderer-registries-v1-3.2.6+6d0fac4218.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.1.6+5847535018/fabric-rendering-data-attachment-v1-0.1.6+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/0.2.1+6d0fac4218/fabric-rendering-fluids-v1-0.2.1+6d0fac4218.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-rendering-v0/1.1.7+6d0fac4218/fabric-rendering-v0-1.1.7+6d0fac4218.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-rendering-v1/1.10.1+6d0fac4218/fabric-rendering-v1-1.10.1+6d0fac4218.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/1.0.5+5847535018/fabric-screen-api-v1-1.0.5+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-tag-extensions-v0/1.2.2+5847535018/fabric-tag-extensions-v0-1.2.2+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-textures-v0/1.0.7+5847535018/fabric-textures-v0-1.0.7+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.0+5847535018/fabric-api-base-0.4.0+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/3.2.2+5847535018/fabric-biome-api-v1-3.2.2+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.1.6+5847535018/fabric-crash-report-info-v1-0.1.6+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.8+5847535018/fabric-game-rule-api-v1-1.0.8+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-keybindings-v0/0.2.3+5847535018/fabric-keybindings-v0-0.2.3+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.5+5847535018/fabric-key-binding-api-v1-1.0.5+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.4.9+5847535018/fabric-resource-loader-v0-0.4.9+5847535018.jar:/home/ash/Documents/randomCode/marlow1-17/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_17_1_1_17_1_build_63_v2/net/fabricmc/fabric-loader/0.12.12/fabric-loader-0.12.12.jar:/home/ash/.gradle/caches/fabric-loom/1.17.1/net.fabricmc.yarn.1_17_1.1.17.1+build.63-v2/mappings.jar:/home/ash/.gradle/caches/modules-2/files-2.1/net.fabricmc/dev-launch-injector/0.2.1+build.8/da8bef7e6e2f952da707f282bdb46882a0fce5e3/dev-launch-injector-0.2.1+build.8.jar:/home/ash/.gradle/caches/modules-2/files-2.1/net.minecrell/terminalconsoleappender/1.2.0/96d02cd3b384ff015a8fef4223bcb4ccf1717c95/terminalconsoleappender-1.2.0.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.jline/jline-reader/3.12.1/4382ab1382c7b6f379377ed5f665dc2f6e1218bc/jline-reader-3.12.1.jar:/home/ash/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal/3.12.1/c777448314e050d980a6b697c140f3bfe9eb7416/jline-terminal-3.12.1.jar:/opt/intellij-idea-ultimate-edition/lib/idea_rt.jar)
+[16:46:18] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric API Lookup API (v1), Fabric Networking API (v1), Fabric Tool Attribute API (v1), Fabric Entity Events (v1), Fabric Screen API (v1), Marlow's Crystal Optimizer, Fabric Events Interaction (v0), Fabric Rendering Data Attachment (v1), Fabric Loot Tables (v1), Fabric Transfer API (v1), Fabric Dimensions API (v1), Fabric Loader, Fabric Particles (v1), Fabric Rendering Fluids (v1), Fabric Lifecycle Events (v1), Fabric Events Lifecycle (v0), Fabric Renderer - Indigo, Fabric Mining Level API (v1), Fabric Biome API (v1), Fabric Key Bindings (v0), Fabric Object Builders (v0), Fabric Item Groups (v0), Fabric BlockRenderLayer Registration (v1), Fabric Screen Handler API (v1), Fabric Content Registries (v0), Fabric Registry Sync (v0), Fabric Mining Levels (v0), Fabric Item API (v1), Fabric Rendering (v1), Fabric Crash Report Info (v1), Fabric Textures (v0), Fabric Models (v0), Fabric Object Builder API (v1), Fabric Networking Block Entity (v0), Fabric Renderer API (v1), Fabric Tag Extensions (v0), Fabric Renderer Registries (v1), Fabric API Base, Fabric Command API (v1), Fabric Key Binding API (v1), Fabric Resource Conditions API (v1), Fabric Commands (v0), Fabric Networking (v0), Fabric Game Test API (v1), Fabric Containers (v0), Fabric Game Rule API (v1), Fabric Resource Loader (v0), Fabric Rendering (v0), Fabric Structure API (v1), Fabric API)
+[16:46:20] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[16:46:25] [Render thread/INFO] (Minecraft) OpenAL initialized.
+[16:46:25] [Render thread/INFO] (Minecraft) Sound engine started
+[16:46:25] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[16:46:25] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[16:46:25] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[16:46:25] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[16:46:25] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[16:46:25] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[16:46:25] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[16:46:27] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[16:46:27] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[16:46:27] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[16:46:45] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16:46:45] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16:46:45] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[16:46:45] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[16:46:45] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16:46:45] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Tool Attribute API (v1), Fabric Game Test API (v1))
+[16:46:46] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[16:46:46] [Render thread/INFO] (Minecraft) Loaded 1137 advancements
+[16:46:46] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 81 new biomes in 13.34 ms
+[16:46:48] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16:46:48] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.17.1
+[16:46:48] [Server thread/INFO] (Minecraft) Generating keypair
+[16:46:56] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[16:46:56] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:46:56] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:46:57] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:46:57] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:46:58] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:46:58] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:46:59] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:46:59] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:00] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:00] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:01] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:01] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:02] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:02] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:03] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:03] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:04] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:04] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:05] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:05] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:07] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:07] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:08] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:08] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:09] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:09] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:10] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:10] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:11] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:12] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:12] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:13] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:14] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:14] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:15] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:15] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:16] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:16] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:17] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:17] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:18] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:18] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:19] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:19] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:20] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:21] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:22] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:22] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:47:22] [Render thread/INFO] (Minecraft) Preparing spawn area: 2%
+[16:47:22] [Render thread/INFO] (Minecraft) Preparing spawn area: 2%
+[16:47:24] [Render thread/INFO] (Minecraft) Preparing spawn area: 3%
+[16:47:24] [Render thread/INFO] (Minecraft) Preparing spawn area: 3%
+[16:47:24] [Render thread/INFO] (Minecraft) Preparing spawn area: 9%
+[16:47:25] [Render thread/INFO] (Minecraft) Preparing spawn area: 10%
+[16:47:25] [Render thread/INFO] (Minecraft) Preparing spawn area: 11%
+[16:47:27] [Render thread/INFO] (Minecraft) Preparing spawn area: 13%
+[16:47:27] [Render thread/INFO] (Minecraft) Preparing spawn area: 13%
+[16:47:27] [Render thread/INFO] (Minecraft) Preparing spawn area: 13%
+[16:47:28] [Render thread/INFO] (Minecraft) Preparing spawn area: 19%
+[16:47:28] [Render thread/INFO] (Minecraft) Preparing spawn area: 19%
+[16:47:28] [Render thread/INFO] (Minecraft) Preparing spawn area: 19%
+[16:47:28] [Render thread/INFO] (Minecraft) Preparing spawn area: 22%
+[16:47:29] [Render thread/INFO] (Minecraft) Preparing spawn area: 27%
+[16:47:30] [Render thread/INFO] (Minecraft) Preparing spawn area: 29%
+[16:47:30] [Render thread/INFO] (Minecraft) Preparing spawn area: 31%
+[16:47:30] [Render thread/INFO] (Minecraft) Preparing spawn area: 31%
+[16:47:31] [Render thread/INFO] (Minecraft) Preparing spawn area: 34%
+[16:47:32] [Render thread/INFO] (Minecraft) Preparing spawn area: 35%
+[16:47:32] [Render thread/INFO] (Minecraft) Preparing spawn area: 35%
+[16:47:32] [Render thread/INFO] (Minecraft) Preparing spawn area: 35%
+[16:47:33] [Render thread/INFO] (Minecraft) Preparing spawn area: 35%
+[16:47:33] [Render thread/INFO] (Minecraft) Preparing spawn area: 41%
+[16:47:34] [Render thread/INFO] (Minecraft) Preparing spawn area: 46%
+[16:47:34] [Render thread/INFO] (Minecraft) Preparing spawn area: 46%
+[16:47:35] [Render thread/INFO] (Minecraft) Preparing spawn area: 50%
+[16:47:35] [Render thread/INFO] (Minecraft) Preparing spawn area: 53%
+[16:47:36] [Render thread/INFO] (Minecraft) Preparing spawn area: 55%
+[16:47:38] [Render thread/INFO] (Minecraft) Preparing spawn area: 56%
+[16:47:38] [Render thread/INFO] (Minecraft) Preparing spawn area: 56%
+[16:47:38] [Render thread/INFO] (Minecraft) Preparing spawn area: 56%
+[16:47:38] [Render thread/INFO] (Minecraft) Preparing spawn area: 56%
+[16:47:39] [Render thread/INFO] (Minecraft) Preparing spawn area: 67%
+[16:47:39] [Render thread/INFO] (Minecraft) Preparing spawn area: 68%
+[16:47:39] [Render thread/INFO] (Minecraft) Preparing spawn area: 73%
+[16:47:41] [Render thread/INFO] (Minecraft) Preparing spawn area: 75%
+[16:47:41] [Render thread/INFO] (Minecraft) Preparing spawn area: 75%
+[16:47:41] [Render thread/INFO] (Minecraft) Preparing spawn area: 82%
+[16:47:41] [Render thread/INFO] (Minecraft) Preparing spawn area: 85%
+[16:47:42] [Render thread/INFO] (Minecraft) Preparing spawn area: 88%
+[16:47:42] [Render thread/INFO] (Minecraft) Preparing spawn area: 89%
+[16:47:43] [Render thread/INFO] (Minecraft) Preparing spawn area: 95%
+[16:47:44] [Render thread/INFO] (Minecraft) Preparing spawn area: 95%
+[16:47:44] [Render thread/INFO] (Minecraft) Preparing spawn area: 95%
+[16:47:45] [Render thread/INFO] (Minecraft) Time elapsed: 48691 ms
+[16:47:45] [Server thread/INFO] (Minecraft) Changing view distance to 11, from 10
+[16:47:47] [Server thread/INFO] (Minecraft) Player771[local:E:2c9360fe] logged in with entity id 313 at (116.5, 68.0, -262.5)
+[16:47:47] [Server thread/INFO] (Minecraft) Player771 joined the game
+[16:47:48] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2987ms or 59 ticks behind
+[16:47:49] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[16:47:49] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[1222]'/minecraft:overworld
+[16:47:50] [Render thread/INFO] (Minecraft) Loaded 0 advancements
+[16:47:53] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[1222]'/minecraft:the_nether
+[16:47:53] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[1222]'/minecraft:the_end
+[16:47:59] [Server thread/INFO] (Minecraft) Player771 has made the advancement [Ice Bucket Challenge]
+[16:48:00] [Render thread/INFO] (Minecraft) [CHAT] Player771 has made the advancement [Ice Bucket Challenge]
+[16:48:00] [Render thread/INFO] (Minecraft) Loaded 12 advancements
+[16:48:10] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[16:48:10] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[1222]'/minecraft:overworld
+[16:48:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[1222]'/minecraft:the_nether
+[16:48:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[1222]'/minecraft:the_end
+[16:48:11] [Server thread/INFO] (Minecraft) Player771 lost connection: Disconnected
+[16:48:11] [Server thread/INFO] (Minecraft) Player771 left the game
+[16:48:11] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[16:48:11] [Server thread/INFO] (Minecraft) Stopping server
+[16:48:11] [Server thread/INFO] (Minecraft) Saving players
+[16:48:11] [Server thread/INFO] (Minecraft) Saving worlds
+[16:48:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[1222]'/minecraft:overworld
+[16:48:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[1222]'/minecraft:the_nether
+[16:48:12] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[1222]'/minecraft:the_end
+[16:48:12] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (1222): All chunks are saved
+[16:48:12] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:48:12] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:48:12] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[16:49:07] [Render thread/INFO] (Minecraft) Stopping!
