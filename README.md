@@ -1,9 +1,4 @@
-# Fabric Example Mod
-
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+# Toggleable Optimizer
+Used AshOnDiscord/marlow1.17.1 as the base. 
+Currently uses the fabric hotkey system combined with a client side message(allows easy log scanning aswell as easy since it's part of the fabric guide for hotkeys).
+Maybe use modmenu in the future.
