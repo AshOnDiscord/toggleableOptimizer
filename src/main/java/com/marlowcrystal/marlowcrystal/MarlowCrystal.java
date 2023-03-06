@@ -15,8 +15,8 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.entity.Entity;
+import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
-import net.minecraft.text.LiteralText;
 
 @Environment(EnvType.CLIENT)
 public class MarlowCrystal implements ClientModInitializer {
@@ -41,7 +41,7 @@ public class MarlowCrystal implements ClientModInitializer {
 				assert client.player != null;
 				isEnabled = !isEnabled;
 				String stateStr = isEnabled ? "enabled" : "disabled";
-				client.player.sendMessage(new LiteralText("§9[Crystal Optimizer]: Optimizer is now " + stateStr), false);
+				client.player.sendMessage(Text.literal("§9[Crystal Optimizer]: Optimizer is now " + stateStr) , false);
 			}
 		});
 	}
