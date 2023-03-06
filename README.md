@@ -6,3 +6,4 @@ Maybe use modmenu in the future.
 MC versions are grouped into major releases(1.14.x, 1.15.x etc rather than minor such as 1.14, 1.14.1 etc) as a single mod/codebase in a branch. The main branch is 1.17.x as it's the version of the base src(view above). 
 
 **THIS IS FOR FABRIC ONLY. FORGE SUPPORT IS NOT PLANNED UNLESS EVERYTHING ELSE IS DONE AND WORKING PERFECTLY**
+As of now, no precompiled jars are provided as this is still a WIP. Once all ports and major bugs are fixed, jars will be provided.
