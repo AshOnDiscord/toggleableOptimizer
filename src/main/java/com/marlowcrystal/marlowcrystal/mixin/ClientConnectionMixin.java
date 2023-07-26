@@ -19,7 +19,7 @@ import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.network.ClientConnection;
-import net.minecraft.network.Packet;
+import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.hit.EntityHitResult;
@@ -32,14 +32,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin({ClientConnection.class})
 public class ClientConnectionMixin {
-    public ClientConnectionMixin() {
-    }
-
-    @Inject(
-            method = {"send(Lnet/minecraft/network/Packet;)V"},
-            at = {@At("HEAD")}
-    )
-    private void onPacketSend(Packet<?> packet, CallbackInfo info) {
+    @Inject(method = {"send(Lnet/minecraft/network/packet/Packet;)V"}, at = {@At("HEAD")})
+    private void send(Packet<?> packet, CallbackInfo info) {
         final MinecraftClient mc = MinecraftClient.getInstance();
         if (!MarlowCrystal.isEnabled) return;
         if (packet instanceof PlayerInteractEntityC2SPacket interactPacket) {

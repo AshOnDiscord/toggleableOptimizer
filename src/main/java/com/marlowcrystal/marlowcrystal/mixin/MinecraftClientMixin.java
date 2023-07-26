@@ -18,9 +18,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin({MinecraftClient.class})
 public class MinecraftClientMixin {
-	public MinecraftClientMixin() {
-	}
-
 	@Inject(
 			method = {"tick"},
 			at = {@At("HEAD")}

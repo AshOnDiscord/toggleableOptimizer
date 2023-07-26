@@ -10,6 +10,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws Throwable {
-        net.fabricmc.devlaunchinjector.Main.main(args);
+//        net.fabricmc.devlaunchinjector.Main.main(args);
     }
 }
